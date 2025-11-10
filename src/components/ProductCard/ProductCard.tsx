@@ -186,6 +186,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                   color="dark"
                   onClick={handleDecrement}
                   disabled={quantity <= 1}
+                  aria-label="decrement"
                >
                   <IconMinus size={14} />
                </ActionIcon>
@@ -194,7 +195,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                   {quantity}
                </Text>
 
-               <ActionIcon size="sm" variant="light" color="dark" onClick={handleIncrement}>
+               <ActionIcon size="sm" variant="light" color="dark" onClick={handleIncrement} aria-label="increment">
                   <IconPlus size={14} />
                </ActionIcon>
             </Group>
