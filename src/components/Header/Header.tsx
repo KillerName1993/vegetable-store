@@ -97,7 +97,7 @@ export const Header: React.FC<HeaderProps> = ({ cart, onClearCart }) => {
                         {/* Грустная тележка из файла - уменьшенный размер */}
                         <Center>
                            <Image
-                              src="/src/assets/empty-cart.svg"
+                              src="empty-cart.svg"
                               width={100}
                               height={92}
                               alt="Empty cart"
